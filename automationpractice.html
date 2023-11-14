@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Upskill Consultancy Automation Practice</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add custom CSS for sticky headers and scrollbar */
+        .table-whole-sticky {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .table-header-sticky {
+            position: sticky;
+            top: 0;
+            background-color: #f8f9fa;
+        }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-dark">
+        <div class="container-fluid ">
+          <a class="navbar-brand text-white" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Practice</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Sign Up</a>
+              </li>			
+            </ul>		  
+          </div>
+        </div>
+      </nav>
+      <br/>
+      <br/>
+      <br/>
+    <div class="container">
+      <h1>Practice Automation</h1>
+      <div class="row">
+        <div class="col-md-3">
+            <h6><strong>Radio Button Example</strong></h6>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Radio 1
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Radio 2
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                <label class="form-check-label" for="flexRadioDefault3">
+                  Radio 3
+                </label>
+              </div>
+        </div>
+        <div class="col-md-3">
+            <label for="exampleDataList" class="form-label"><strong>Suggestion Class Example</strong></label>
+            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search car brands...">
+            <datalist id="datalistOptions">
+            <option value="Ford">
+            <option value="Chevrolet">
+            <option value="Toyota">
+            <option value="General Motors">
+            <option value="Subaru">
+            <option value="Audi">
+            <option value="BMW">
+            <option value="Mercedes">
+            <option value="Kia">
+            <option value="Hyundai">
+            <option value="Honda">
+            <option value="Jaguar">
+            <option value="Land Rover">
+            <option value="Mitsubishi">
+            <option value="Nissan">
+            <option value="Alfa Romeo">
+            <option value="Peugeot">
+            <option value="Bentley">
+            <option value="Lamborghini">
+            <option value="Ferrari">
+            <option value="Genesis">
+            <option value="Volvo">
+            <option value="Volkwagen">
+            <option value="Porche">
+            <option value="Tata">
+            <option value="Dodge">
+            <option value="Lexus">
+            <option value="Buick">
+            <option value="Acura">
+            <option value="Aston Martin">
+            <option value="Mini">
+            </datalist>
+        </div>
+        <div class="col-md-3">
+            <h6><strong>Dropdown Example</strong></h6>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Select</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+        </div>
+        <div class="col-md-3">
+            <h6><strong>Checkbox Example</strong></h6>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Checkbox 1
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedOne">
+                <label class="form-check-label" for="flexCheckChecked">
+                  Checkbox 2
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedTwo">
+                <label class="form-check-label" for="flexCheckChecked">
+                  Checkbox 3
+                </label>
+              </div>
+        </div>
+      </div>
+      <br/>
+      <br/>
+      <br/>
+      <div class="row">
+        <div class="col-md-3">
+            <h6><strong>Switch window example</strong></h6>
+            <button type="button" class="btn btn-primary" onclick="window.open('https://www.upskillconsultancy.com','popup','width=1000,height=600'); return false;">Open Window</button>
+        </div>
+        <div class="col-md-3">
+            <h6><strong>Switch window example</strong></h6>
+            <button type="button" class="btn btn-primary" onclick="window.open('https://www.upskillconsultancy.com','_blank'); return false;">Open Tab</button>
+        </div>
+        <div class="col-md-3">
+            <h6><strong>Switch to alert example</strong></h6>
+            <input type="text" id="alertyourname" placeholder="Your Name">
+            <br/>
+            <br/>
+            <div class="row">
+                <span><button type="button" class="btn btn-primary" onclick="displayAlert()">Alert</button>&nbsp;&nbsp;<button type="button" class="btn btn-primary" onclick="showConfirmation()">Confirm</button></span>
+            </div>            
+        </div>
+        <div class="col-md-3">
+            <h6><strong>Element displayed example</strong></h6>
+            <p id="hiddenText">This text will be hidden</p>
+            <span><button type="button" class="btn btn-primary" onclick="showText()">Show Text</button>&nbsp;&nbsp;<button type="button" class="btn btn-primary" onclick="hideText()">Hide Text</button></span>
+        </div>
+      </div>
+      <br/>
+      <br/>
+      <br/>
+      <div class="row">
+        <div class="col-md-6">
+            <h6><strong>Web table example</strong></h6>
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Brand</th>
+                        <th>Model</th>
+                        <th>Color</th>
+                        <th>Year</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Sample entries -->
+                    <tr>
+                        <td>Toyota</td>
+                        <td>Corolla</td>
+                        <td>White</td>
+                        <td>2019</td>
+                        <td>$20,000</td>
+                    </tr>
+                    <tr>
+                        <td>Ford</td>
+                        <td>Escape</td>
+                        <td>Green</td>
+                        <td>2022</td>
+                        <td>$28,000</td>
+                    </tr>
+                    <tr>
+                        <td>Chevrolet</td>
+                        <td>Equinox</td>
+                        <td>Silver</td>
+                        <td>2020</td>
+                        <td>$24,500</td>
+                    </tr>
+                    <tr>
+                        <td>Honda</td>
+                        <td>Civic</td>
+                        <td>Black</td>
+                        <td>2018</td>
+                        <td>$21,000</td>
+                    </tr>
+                    <tr>
+                        <td>Nissan</td>
+                        <td>Altima</td>
+                        <td>Blue</td>
+                        <td>2021</td>
+                        <td>$23,500</td>
+                    </tr>
+                    <tr>
+                        <td>BMW</td>
+                        <td>3 Series</td>
+                        <td>Silver</td>
+                        <td>2022</td>
+                        <td>$40,000</td>
+                    </tr>
+                    <tr>
+                        <td>Mercedes-Benz</td>
+                        <td>C-Class</td>
+                        <td>Red</td>
+                        <td>2019</td>
+                        <td>$38,000</td>
+                    </tr>
+                    <tr>
+                        <td>Audi</td>
+                        <td>A4</td>
+                        <td>Gray</td>
+                        <td>2020</td>
+                        <td>$36,500</td>
+                    </tr>
+                    <tr>
+                        <td>Hyundai</td>
+                        <td>Sonata</td>
+                        <td>White</td>
+                        <td>2017</td>
+                        <td>$18,500</td>
+                    </tr>
+                    <tr>
+                        <td>Kia</td>
+                        <td>Optima</td>
+                        <td>Black</td>
+                        <td>2021</td>
+                        <td>$22,500</td>
+                    </tr>
+                    <tr>
+                        <td>Subaru</td>
+                        <td>Outback</td>
+                        <td>Blue</td>
+                        <td>2022</td>
+                        <td>$30,000</td>
+                    </tr>
+                    <tr>
+                        <td>Lexus</td>
+                        <td>ES</td>
+                        <td>Gold</td>
+                        <td>2018</td>
+                        <td>$32,000</td>
+                    </tr>
+                    <tr>
+                        <td>Tesla</td>
+                        <td>Model 3</td>
+                        <td>White</td>
+                        <td>2021</td>
+                        <td>$45,000</td>
+                    </tr>
+                    <tr>
+                        <td>Mazda</td>
+                        <td>CX-5</td>
+                        <td>Silver</td>
+                        <td>2020</td>
+                        <td>$26,000</td>
+                    </tr>
+                    <tr>
+                        <td>Jeep</td>
+                        <td>Cherokee</td>
+                        <td>Red</td>
+                        <td>2019</td>
+                        <td>$29,500</td>
+                    </tr>
+                    <tr>
+                        <td>Volvo</td>
+                        <td>S60</td>
+                        <td>Gray</td>
+                        <td>2022</td>
+                        <td>$34,000</td>
+                    </tr>
+                    <tr>
+                        <td>Ford</td>
+                        <td>Fusion</td>
+                        <td>Black</td>
+                        <td>2018</td>
+                        <td>$23,000</td>
+                    </tr>
+                    <tr>
+                        <td>Chevrolet</td>
+                        <td>Impala</td>
+                        <td>White</td>
+                        <td>2021</td>
+                        <td>$27,500</td>
+                    </tr>
+                    <tr>
+                        <td>Toyota</td>
+                        <td>Rav4</td>
+                        <td>Blue</td>
+                        <td>2020</td>
+                        <td>$29,000</td>
+                    </tr>
+                    <tr>
+                        <td>Nissan</td>
+                        <td>Rogue</td>
+                        <td>Silver</td>
+                        <td>2019</td>
+                        <td>$26,500</td>
+                    </tr>
+                    <tr>
+                        <td>Honda</td>
+                        <td>CR-V</td>
+                        <td>Green</td>
+                        <td>2022</td>
+                        <td>$31,000</td>
+                    </tr>
+                    <tr>
+                        <td>Subaru</td>
+                        <td>Forester</td>
+                        <td>Orange</td>
+                        <td>2018</td>
+                        <td>$25,500</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-6">
+            <h6><strong>Web table example</strong></h6>
+            <div class="row">
+            <div class="table-whole-sticky">
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th class="table-header-sticky">Brand</th>
+                        <th class="table-header-sticky">Model</th>
+                        <th class="table-header-sticky">Color</th>
+                        <th class="table-header-sticky">Year</th>
+                        <th class="table-header-sticky">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Sample entries -->
+                    <tr>
+                        <td>Toyota</td>
+                        <td>Corolla</td>
+                        <td>White</td>
+                        <td>2019</td>
+                        <td>$20,000</td>
+                    </tr>
+                    <tr>
+                        <td>Ford</td>
+                        <td>Escape</td>
+                        <td>Green</td>
+                        <td>2022</td>
+                        <td>$28,000</td>
+                    </tr>
+                    <tr>
+                        <td>Chevrolet</td>
+                        <td>Equinox</td>
+                        <td>Silver</td>
+                        <td>2020</td>
+                        <td>$24,500</td>
+                    </tr>
+                    <tr>
+                        <td>Honda</td>
+                        <td>Civic</td>
+                        <td>Black</td>
+                        <td>2018</td>
+                        <td>$21,000</td>
+                    </tr>
+                    <tr>
+                        <td>Nissan</td>
+                        <td>Altima</td>
+                        <td>Blue</td>
+                        <td>2021</td>
+                        <td>$23,500</td>
+                    </tr>
+                    <tr>
+                        <td>BMW</td>
+                        <td>3 Series</td>
+                        <td>Silver</td>
+                        <td>2022</td>
+                        <td>$40,000</td>
+                    </tr>
+                    <tr>
+                        <td>Mercedes-Benz</td>
+                        <td>C-Class</td>
+                        <td>Red</td>
+                        <td>2019</td>
+                        <td>$38,000</td>
+                    </tr>
+                    <tr>
+                        <td>Audi</td>
+                        <td>A4</td>
+                        <td>Gray</td>
+                        <td>2020</td>
+                        <td>$36,500</td>
+                    </tr>
+                    <tr>
+                        <td>Hyundai</td>
+                        <td>Sonata</td>
+                        <td>White</td>
+                        <td>2017</td>
+                        <td>$18,500</td>
+                    </tr>
+                    <tr>
+                        <td>Kia</td>
+                        <td>Optima</td>
+                        <td>Black</td>
+                        <td>2021</td>
+                        <td>$22,500</td>
+                    </tr>
+                    <tr>
+                        <td>Subaru</td>
+                        <td>Outback</td>
+                        <td>Blue</td>
+                        <td>2022</td>
+                        <td>$30,000</td>
+                    </tr>
+                    <tr>
+                        <td>Lexus</td>
+                        <td>ES</td>
+                        <td>Gold</td>
+                        <td>2018</td>
+                        <td>$32,000</td>
+                    </tr>
+                    <tr>
+                        <td>Tesla</td>
+                        <td>Model 3</td>
+                        <td>White</td>
+                        <td>2021</td>
+                        <td>$45,000</td>
+                    </tr>
+                    <tr>
+                        <td>Mazda</td>
+                        <td>CX-5</td>
+                        <td>Silver</td>
+                        <td>2020</td>
+                        <td>$26,000</td>
+                    </tr>
+                    <tr>
+                        <td>Jeep</td>
+                        <td>Cherokee</td>
+                        <td>Red</td>
+                        <td>2019</td>
+                        <td>$29,500</td>
+                    </tr>
+                    <tr>
+                        <td>Volvo</td>
+                        <td>S60</td>
+                        <td>Gray</td>
+                        <td>2022</td>
+                        <td>$34,000</td>
+                    </tr>
+                    <tr>
+                        <td>Ford</td>
+                        <td>Fusion</td>
+                        <td>Black</td>
+                        <td>2018</td>
+                        <td>$23,000</td>
+                    </tr>
+                    <tr>
+                        <td>Chevrolet</td>
+                        <td>Impala</td>
+                        <td>White</td>
+                        <td>2021</td>
+                        <td>$27,500</td>
+                    </tr>
+                    <tr>
+                        <td>Toyota</td>
+                        <td>Rav4</td>
+                        <td>Blue</td>
+                        <td>2020</td>
+                        <td>$29,000</td>
+                    </tr>
+                    <tr>
+                        <td>Nissan</td>
+                        <td>Rogue</td>
+                        <td>Silver</td>
+                        <td>2019</td>
+                        <td>$26,500</td>
+                    </tr>
+                    <tr>
+                        <td>Honda</td>
+                        <td>CR-V</td>
+                        <td>Green</td>
+                        <td>2022</td>
+                        <td>$31,000</td>
+                    </tr>
+                    <tr>
+                        <td>Subaru</td>
+                        <td>Forester</td>
+                        <td>Orange</td>
+                        <td>2018</td>
+                        <td>$25,500</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <div clas="row">
+            <h6><strong>Mouse hover example</strong></h6>
+            <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="<a href='#' class='btn btn-success'>Button 1</a> <a href='#' class='btn btn-danger'>Button 2</a>">
+                <button class="btn btn-primary" type="button">Hover over me</button>
+            </span>
+        </div>
+        </div>
+        <div class="row">
+            <h6>iframe Example</h6>
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.upskillconsultancy.com" title="Upskill Consultancy" allowfullscreen></iframe>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script>
+
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+
+        function displayAlert() {
+            var name = document.getElementById("alertyourname").value;
+            alert("Hello, " + name + "! I hope you are having a good day!");
+        }
+
+        function showConfirmation() {
+            var name = document.getElementById("alertyourname").value;
+            var confirmation = confirm("Hello, " + name + "! Please confirm you understand that this is a confirmation dialog.");
+            
+            if (confirmation) {
+                alert("Great!");
+            }
+        }
+
+        function showText() {
+            document.getElementById("hiddenText").style.display = "block";
+        }
+
+        function hideText() {
+            document.getElementById("hiddenText").style.display = "none";
+        }
+    </script>
+  </body>
+</html>
