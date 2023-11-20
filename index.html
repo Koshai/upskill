@@ -21,38 +21,14 @@
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm navbar-light bg-dark">
-        <div class="container-fluid ">
-          <a class="navbar-brand text-white" href="#">Upskill Consultancy Automation Practice</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <ul class="navbar-nav ">
-              <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Practice</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Login</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Sign Up</a>
-              </li>			
-            </ul>		  
-          </div>
-        </div>
-      </nav>
-      <br/>
-      <br/>
-      <br/>
     <div class="container">
-      <h1>Practice Automation</h1>
+      <div class="row text-center">
+        <h3>Hands-on Automation Practice</h3>
+      </div>
+      <br/>
       <div class="row">
         <div class="col-md-3">
-            <h6><strong>Radio Button Example</strong></h6>
+            <h6><strong>Radio Button</strong></h6>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
                 <label class="form-check-label" for="flexRadioDefault1">
@@ -73,8 +49,8 @@
               </div>
         </div>
         <div class="col-md-3">
-            <label for="exampleDataList" class="form-label"><strong>Suggestion Class Example</strong></label>
-            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search car brands...">
+            <label for="DataList" class="form-label"><strong>Suggestion Textbox</strong></label>
+            <input class="form-control" list="datalistOptions" id="DataList" placeholder="Type to search car brands...">
             <datalist id="datalistOptions">
             <option value="Ford">
             <option value="Chevrolet">
@@ -85,6 +61,7 @@
             <option value="BMW">
             <option value="Mercedes">
             <option value="Kia">
+            <option value="Tesla">
             <option value="Hyundai">
             <option value="Honda">
             <option value="Jaguar">
@@ -110,8 +87,8 @@
             </datalist>
         </div>
         <div class="col-md-3">
-            <h6><strong>Dropdown Example</strong></h6>
-            <select class="form-select" aria-label="Default select example">
+            <h6><strong>Dropdown </strong></h6>
+            <select class="form-select" aria-label="Default select ">
                 <option selected>Select</option>
                 <option value="1">Option 1</option>
                 <option value="2">Option 2</option>
@@ -119,7 +96,7 @@
               </select>
         </div>
         <div class="col-md-3">
-            <h6><strong>Checkbox Example</strong></h6>
+            <h6><strong>Checkbox</strong></h6>
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                 <label class="form-check-label" for="flexCheckDefault">
@@ -145,15 +122,15 @@
       <br/>
       <div class="row">
         <div class="col-md-3">
-            <h6><strong>Switch window example</strong></h6>
+            <h6><strong>Switch Window</strong></h6>
             <button type="button" class="btn btn-primary" onclick="window.open('https://www.upskillconsultancy.com','popup','width=1000,height=600'); return false;">Open Window</button>
         </div>
         <div class="col-md-3">
-            <h6><strong>Switch window example</strong></h6>
+            <h6><strong>Switch Tab</strong></h6>
             <button type="button" class="btn btn-primary" onclick="window.open('https://www.upskillconsultancy.com','_blank'); return false;">Open Tab</button>
         </div>
         <div class="col-md-3">
-            <h6><strong>Switch to alert example</strong></h6>
+            <h6><strong>Switch to Alert</strong></h6>
             <input type="text" id="alertyourname" placeholder="Your Name">
             <br/>
             <br/>
@@ -162,7 +139,7 @@
             </div>            
         </div>
         <div class="col-md-3">
-            <h6><strong>Element displayed example</strong></h6>
+            <h6><strong>Element Displayed </strong></h6>
             <p id="hiddenText">This text will be hidden</p>
             <span><button type="button" class="btn btn-primary" onclick="showText()">Show Text</button>&nbsp;&nbsp;<button type="button" class="btn btn-primary" onclick="hideText()">Hide Text</button></span>
         </div>
@@ -172,178 +149,23 @@
       <br/>
       <div class="row">
         <div class="col-md-6">
-            <h6><strong>Web table example</strong></h6>
-            <table class="table table-bordered">
-                <thead class="table-dark">
-                    <tr>
-                        <th>Brand</th>
-                        <th>Model</th>
-                        <th>Color</th>
-                        <th>Year</th>
-                        <th>Price</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Sample entries -->
-                    <tr>
-                        <td>Toyota</td>
-                        <td>Corolla</td>
-                        <td>White</td>
-                        <td>2019</td>
-                        <td>$20,000</td>
-                    </tr>
-                    <tr>
-                        <td>Ford</td>
-                        <td>Escape</td>
-                        <td>Green</td>
-                        <td>2022</td>
-                        <td>$28,000</td>
-                    </tr>
-                    <tr>
-                        <td>Chevrolet</td>
-                        <td>Equinox</td>
-                        <td>Silver</td>
-                        <td>2020</td>
-                        <td>$24,500</td>
-                    </tr>
-                    <tr>
-                        <td>Honda</td>
-                        <td>Civic</td>
-                        <td>Black</td>
-                        <td>2018</td>
-                        <td>$21,000</td>
-                    </tr>
-                    <tr>
-                        <td>Nissan</td>
-                        <td>Altima</td>
-                        <td>Blue</td>
-                        <td>2021</td>
-                        <td>$23,500</td>
-                    </tr>
-                    <tr>
-                        <td>BMW</td>
-                        <td>3 Series</td>
-                        <td>Silver</td>
-                        <td>2022</td>
-                        <td>$40,000</td>
-                    </tr>
-                    <tr>
-                        <td>Mercedes-Benz</td>
-                        <td>C-Class</td>
-                        <td>Red</td>
-                        <td>2019</td>
-                        <td>$38,000</td>
-                    </tr>
-                    <tr>
-                        <td>Audi</td>
-                        <td>A4</td>
-                        <td>Gray</td>
-                        <td>2020</td>
-                        <td>$36,500</td>
-                    </tr>
-                    <tr>
-                        <td>Hyundai</td>
-                        <td>Sonata</td>
-                        <td>White</td>
-                        <td>2017</td>
-                        <td>$18,500</td>
-                    </tr>
-                    <tr>
-                        <td>Kia</td>
-                        <td>Optima</td>
-                        <td>Black</td>
-                        <td>2021</td>
-                        <td>$22,500</td>
-                    </tr>
-                    <tr>
-                        <td>Subaru</td>
-                        <td>Outback</td>
-                        <td>Blue</td>
-                        <td>2022</td>
-                        <td>$30,000</td>
-                    </tr>
-                    <tr>
-                        <td>Lexus</td>
-                        <td>ES</td>
-                        <td>Gold</td>
-                        <td>2018</td>
-                        <td>$32,000</td>
-                    </tr>
-                    <tr>
-                        <td>Tesla</td>
-                        <td>Model 3</td>
-                        <td>White</td>
-                        <td>2021</td>
-                        <td>$45,000</td>
-                    </tr>
-                    <tr>
-                        <td>Mazda</td>
-                        <td>CX-5</td>
-                        <td>Silver</td>
-                        <td>2020</td>
-                        <td>$26,000</td>
-                    </tr>
-                    <tr>
-                        <td>Jeep</td>
-                        <td>Cherokee</td>
-                        <td>Red</td>
-                        <td>2019</td>
-                        <td>$29,500</td>
-                    </tr>
-                    <tr>
-                        <td>Volvo</td>
-                        <td>S60</td>
-                        <td>Gray</td>
-                        <td>2022</td>
-                        <td>$34,000</td>
-                    </tr>
-                    <tr>
-                        <td>Ford</td>
-                        <td>Fusion</td>
-                        <td>Black</td>
-                        <td>2018</td>
-                        <td>$23,000</td>
-                    </tr>
-                    <tr>
-                        <td>Chevrolet</td>
-                        <td>Impala</td>
-                        <td>White</td>
-                        <td>2021</td>
-                        <td>$27,500</td>
-                    </tr>
-                    <tr>
-                        <td>Toyota</td>
-                        <td>Rav4</td>
-                        <td>Blue</td>
-                        <td>2020</td>
-                        <td>$29,000</td>
-                    </tr>
-                    <tr>
-                        <td>Nissan</td>
-                        <td>Rogue</td>
-                        <td>Silver</td>
-                        <td>2019</td>
-                        <td>$26,500</td>
-                    </tr>
-                    <tr>
-                        <td>Honda</td>
-                        <td>CR-V</td>
-                        <td>Green</td>
-                        <td>2022</td>
-                        <td>$31,000</td>
-                    </tr>
-                    <tr>
-                        <td>Subaru</td>
-                        <td>Forester</td>
-                        <td>Orange</td>
-                        <td>2018</td>
-                        <td>$25,500</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="row">
+                <h6><strong>Mouse hover </strong></h6>
+                <span class="d-inline-block" data-bs-placement="bottom" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="<a href='#' class='btn btn-success'>Button 1</a> <a href='#' class='btn btn-danger'>Button 2</a>">
+                <button class="btn btn-primary" type="button">Hover over me</button></span>
+            </span>
+            </div>
+            <br/>
+            <br/>
+            <div class="row">
+                <h6><strong>iFrame</strong></h6>
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.upskillconsultancy.com" title="Upskill Consultancy" allowfullscreen></iframe>
+                </div>
+            </div>
         </div>
         <div class="col-md-6">
-            <h6><strong>Web table example</strong></h6>
+            <h6><strong>Web table </strong></h6>
             <div class="row">
             <div class="table-whole-sticky">
             <table class="table table-bordered">
@@ -519,18 +341,6 @@
         <br/>
         <br/>
         <br/>
-        <div clas="row">
-            <h6><strong>Mouse hover example</strong></h6>
-            <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true" data-bs-content="<a href='#' class='btn btn-success'>Button 1</a> <a href='#' class='btn btn-danger'>Button 2</a>">
-                <button class="btn btn-primary" type="button">Hover over me</button>
-            </span>
-        </div>
-        </div>
-        <div class="row">
-            <h6>iframe Example</h6>
-            <div class="ratio ratio-16x9">
-                <iframe src="https://www.upskillconsultancy.com" title="Upskill Consultancy" allowfullscreen></iframe>
-            </div>
         </div>
       </div>
     </div>
